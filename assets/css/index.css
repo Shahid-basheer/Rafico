@@ -9,12 +9,10 @@
   background-repeat: no-repeat;
   background-position: right top;
   background-size: contain;
-  padding: 2rem;
   color: var(--white);
   padding-top: 10rem;
-  padding-left: 10rem;
-  font-size: 57px;
-  margin-top: 3rem;
+  font-size: 16px;
+  margin-top: 3.5rem;
 }
 
 .top-img .headding {
@@ -58,6 +56,9 @@
   align-items: center;
 } */
 
+.top-introduction-img {
+  width: 617px;
+}
 .center-img {
   width: 100%;
   height: 20rem;
@@ -83,10 +84,45 @@
   color: var(--white);
   background: var(--deepNavy);
 }
-.bottom-cards .magenta {
+.bottom-cards .core-values-icon1 {
   width: 76px;
   height: 76px;
-  background: var(--magenta);
+  background-image: url("../images/home-core-values1.svg");
+  border-radius: 8px;
+  margin-bottom: 1.5rem;
+}
+.bottom-cards .core-values-icon2 {
+  width: 76px;
+  height: 76px;
+  background-image: url("../images/home-core-values2.svg");
+  border-radius: 8px;
+  margin-bottom: 1.5rem;
+}
+.bottom-cards .core-values-icon3 {
+  width: 76px;
+  height: 76px;
+  background-image: url("../images/home-core-values3.svg");
+  border-radius: 8px;
+  margin-bottom: 1.5rem;
+}
+.bottom-cards .core-values-icon4 {
+  width: 76px;
+  height: 76px;
+  background-image: url("../images/home-core-values4.svg");
+  border-radius: 8px;
+  margin-bottom: 1.5rem;
+}
+.bottom-cards .core-values-icon5 {
+  width: 76px;
+  height: 76px;
+  background-image: url("../images/home-core-values5.svg");
+  border-radius: 8px;
+  margin-bottom: 1.5rem;
+}
+.bottom-cards .core-values-icon6 {
+  width: 76px;
+  height: 76px;
+  background-image: url("../images/home-core-values6.svg");
   border-radius: 8px;
   margin-bottom: 1.5rem;
 }
@@ -124,6 +160,7 @@
 
 .footer-wrapper {
   padding: 7rem;
+  padding-top: 4rem;
   padding-bottom: 0;
 }
 
@@ -179,7 +216,7 @@
   border-style: solid;
   border-color: #4e5683;
   margin-top: 1.5rem;
-  padding: 2rem;
+  padding: 1rem;
 }
 
 /* ______________________________________ Media Query _________________________________________
@@ -189,8 +226,12 @@
 ___________________________________________________________________________________________________
 */
 
-@media only screen and (max-width: 1400px) {
+@media only screen and (max-width: 1200px) {
   .top-img .headding {
     font-size: 2rem;
+  }
+
+  .top-introduction-img {
+    width: 400px;
   }
 }

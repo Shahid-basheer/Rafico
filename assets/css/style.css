@@ -39,6 +39,9 @@ span {
 .bg-lightWhite {
   background: var(--lightWhite);
 }
+.bg-deep-navy-blue {
+  background: var(--deepNavy);
+}
 .nav-item {
   text-transform: uppercase;
 }

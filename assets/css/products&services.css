@@ -1,0 +1,201 @@
+@import url("style.css");
+.top-img {
+  width: 100%;
+  height: 384px;
+  background-image: linear-gradient(to right, #01253d 20%, transparent),
+    url("../images/products-top-img.svg");
+  background-repeat: no-repeat;
+  background-position: right top;
+  padding-top: 10rem;
+  color: var(--white);
+  margin-top: 3rem;
+}
+
+.top-img h1 {
+  font-size: 57px;
+  font-weight: 700;
+}
+
+.product-btn {
+  width: 12rem;
+  height: 50px;
+  padding: 14px 0px 18px 0px;
+  color: var(--deepNavy);
+  background: var(--lightWhite);
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.active-btn {
+  background: var(--deepNavy);
+  color: var(--white);
+}
+
+.active-btn:hover {
+  opacity: 0.9;
+  transition: 0.5s;
+}
+
+.pro-img1 {
+  min-width: 22rem;
+  height: 20rem;
+  background-image: url("../images/products-mens-shoe1.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius: 12px;
+}
+.pro-img2 {
+  min-width: 22rem;
+  height: 20rem;
+  background-image: url("../images/products-mens-shoe2.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius: 12px;
+}
+.pro-img3 {
+  min-width: 22rem;
+  height: 20rem;
+  background-image: url("../images/products-mens-shoe3.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius: 12px;
+}
+.pro-img4 {
+  min-width: 22rem;
+  height: 20rem;
+  background-image: url("../images/products-mens-shoe4.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius: 12px;
+}
+.pro-img5 {
+  min-width: 22rem;
+  height: 20rem;
+  background-image: url("../images/products-mens-shoe5.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius: 12px;
+}
+.pro-img6 {
+  min-width: 22rem;
+  height: 20rem;
+  background-image: url("../images/products-mens-shoe6.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius: 12px;
+}
+
+.unboxing-shoes-img1 {
+  min-width: 23rem;
+  height: 33rem;
+  background-image: url("../images/products-mens-boys1.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.unboxing-shoes-img2 {
+  min-width: 23rem;
+  height: 33rem;
+  background-image: url("../images/products-mens-boys2.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.unboxing-shoes-img3 {
+  min-width: 23rem;
+  height: 33rem;
+  background-image: url("../images/products-mens-boys3.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+/*Client Logo*/
+.client-logo {
+  width: 100%;
+  height: 13rem;
+  background: var(--lightWhite);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  overflow: hidden;
+  margin-top: 2rem;
+}
+
+/* Footer */
+
+.footer {
+  width: 100%;
+  height: auto;
+  background: var(--deepNavy);
+  color: var(--white);
+}
+
+.footer-wrapper {
+  padding: 7rem;
+  padding-bottom: 0;
+}
+
+.email-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 27px;
+  background: var(--magenta);
+  padding: 11px;
+  padding-top: 8px;
+  cursor: pointer;
+}
+.phone-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 27px;
+  background: var(--magenta);
+  padding: 11px;
+  padding-top: 8px;
+  cursor: pointer;
+}
+
+.footer-icons {
+  width: 30px;
+  height: 30px;
+  border-radius: 25px;
+  background: var(--magenta);
+  padding: 8px;
+  padding-top: 3px;
+  cursor: pointer;
+  color: var(--white);
+}
+.footer-icons:nth-child(3) {
+  padding: 6px;
+  padding-top: 2px;
+}
+.footer-links {
+  padding: 0;
+}
+
+.footer-links > li {
+  margin-top: 1rem;
+}
+.footer-links > li > a {
+  text-decoration: none;
+  color: var(--white);
+}
+
+.footer .hr-line {
+  width: 100%;
+  border: 0;
+  border-top: 1px;
+  border-style: solid;
+  border-color: #4e5683;
+  margin-top: 1.5rem;
+  padding: 1rem;
+}

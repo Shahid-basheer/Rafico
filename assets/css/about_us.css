@@ -7,7 +7,6 @@
     url("../images/top-img-about_us.svg");
   background-repeat: no-repeat;
   background-position: right top;
-  padding: 7rem;
   padding-top: 10rem;
   color: var(--white);
   margin-top: 3rem;
@@ -23,9 +22,22 @@
   width: 606px;
 }
 
+.about-mobile-img {
+  display: none;
+}
 /* wht-we-do-img */
 .wht-we-do-img {
   width: 574px;
+}
+
+.vision-flex {
+  height: 235px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+#vision-mission-mobile {
+  display: none;
 }
 /*Client Logo*/
 .client-logo {
@@ -39,75 +51,6 @@
   margin-top: 2rem;
 }
 
-/* Footer */
-
-.footer {
-  width: 100%;
-  height: auto;
-  background: var(--deepNavy);
-  color: var(--white);
-}
-
-.footer-wrapper {
-  padding: 7rem;
-  padding-bottom: 0;
-}
-
-.email-icon {
-  width: 40px;
-  height: 40px;
-  border-radius: 27px;
-  background: var(--magenta);
-  padding: 11px;
-  padding-top: 8px;
-  cursor: pointer;
-}
-.phone-icon {
-  width: 40px;
-  height: 40px;
-  border-radius: 27px;
-  background: var(--magenta);
-  padding: 11px;
-  padding-top: 8px;
-  cursor: pointer;
-}
-
-.footer-icons {
-  width: 30px;
-  height: 30px;
-  border-radius: 25px;
-  background: var(--magenta);
-  padding: 8px;
-  padding-top: 3px;
-  cursor: pointer;
-  color: var(--white);
-}
-.footer-icons:nth-child(3) {
-  padding: 6px;
-  padding-top: 2px;
-}
-.footer-links {
-  padding: 0;
-}
-
-.footer-links > li {
-  margin-top: 1rem;
-}
-.footer-links > li > a {
-  text-decoration: none;
-  color: var(--white);
-}
-
-.footer .hr-line {
-  width: 100%;
-  border: 0;
-  border-top: 1px;
-  border-style: solid;
-  border-color: #4e5683;
-  margin-top: 1.5rem;
-  padding: 1rem;
-}
-
 /* ______________________________________ Media Query _________________________________________
 
 ---------------------------------------------------------------------------------------------------
@@ -115,11 +58,80 @@
 ___________________________________________________________________________________________________
 */
 
-@media only screen and (max-width: 1300px) {
+@media only screen and (min-width: 200px) and (max-width: 800px) {
+  .top-img {
+    height: 303px;
+    padding-top: 6rem;
+    margin-top: 3rem;
+  }
+  /* About image */
+  .about-img {
+    width: 338px;
+  }
+  /* wht-we-do-img */
+  .wht-we-do-img {
+    width: 341px;
+  }
+  .top-img h1 {
+    font-size: 32px;
+  }
+  .about-para {
+    font-size: 12px;
+    margin-bottom: 2.5rem;
+  }
+  .about-mobile-img {
+    display: block;
+  }
+  .about-desktop-img {
+    display: none;
+  }
+  .about-row {
+    padding: 0 !important;
+  }
+  .about-headding {
+    margin: 0 !important;
+    padding: 0 !important;
+    margin-bottom: 0.5rem !important;
+  }
+  .wht-we-do-row {
+    padding-top: 0 !important;
+  }
+  .wht-we-do-headding {
+    margin-bottom: 1rem !important;
+  }
+  .wht-we-do-para {
+    margin-bottom: 3rem;
+    font-size: 12px;
+  }
+
+  #vision-mission-desktop {
+    display: none;
+  }
+  #vision-mission-mobile {
+    display: block;
+  }
+  .about-column {
+    width: 100%;
+    flex: 0 0 auto;
+  }
+  .wht-we-do-column {
+    width: 100%;
+    flex: 0 0 auto;
+  }
+
+  /*Client Logo*/
+  .client-logo {
+    margin-top: 0;
+  }
+}
+
+@media only screen and (min-width: 800px) and (max-width: 1200px) {
   .about-img {
     width: 400px;
   }
   .wht-we-do-img {
     width: 400px;
   }
+}
+@media only screen and (min-width: 1200px) and (max-width: 1600px) {
 }

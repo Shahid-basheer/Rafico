@@ -43,8 +43,8 @@
 
 .top-cards > div > div:first-child {
   border: 0;
-  border-right: 3px;
-  border-style: dotted;
+  border-right: 2px;
+  border-style: dashed;
   border-color: var(--white);
   padding-top: 0.7rem;
   padding-right: 1rem;
@@ -59,14 +59,22 @@
 .top-introduction-img {
   width: 617px;
 }
+
+.introduction-mobile {
+  display: none;
+}
+
 .center-img {
   width: 100%;
   height: 20rem;
-  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.3), transparent),
-    url("../images/home_center-img.svg");
+  background-image: url("../images/home_center-img.svg");
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 100%;
   margin-top: 5rem;
+}
+
+.center-text-mobile {
+  display: none;
 }
 
 .bottom-cards {
@@ -149,74 +157,8 @@
   padding-bottom: 2rem;
 }
 
-/* Footer */
-
-.footer {
-  width: 100%;
-  height: auto;
-  background: var(--deepNavy);
-  color: var(--white);
-}
-
-.footer-wrapper {
-  padding: 7rem;
-  padding-top: 4rem;
-  padding-bottom: 0;
-}
-
-.email-icon {
-  width: 40px;
-  height: 40px;
-  border-radius: 27px;
-  background: var(--magenta);
-  padding: 11px;
-  padding-top: 8px;
-  cursor: pointer;
-}
-.phone-icon {
-  width: 40px;
-  height: 40px;
-  border-radius: 27px;
-  background: var(--magenta);
-  padding: 11px;
-  padding-top: 8px;
-  cursor: pointer;
-}
-
-.footer-icons {
-  width: 30px;
-  height: 30px;
-  border-radius: 25px;
-  background: var(--magenta);
-  padding: 8px;
-  padding-top: 3px;
-  cursor: pointer;
-  color: var(--white);
-}
-.footer-icons:nth-child(3) {
-  padding: 6px;
-  padding-top: 2px;
-}
-.footer-links {
-  padding: 0;
-}
-
-.footer-links > li {
-  margin-top: 1rem;
-}
-.footer-links > li > a {
-  text-decoration: none;
-  color: var(--white);
-}
-
-.footer .hr-line {
-  width: 100%;
-  border: 0;
-  border-top: 1px;
-  border-style: solid;
-  border-color: #4e5683;
-  margin-top: 1.5rem;
-  padding: 1rem;
+.para-why-choose-mobile {
+  display: none;
 }
 
 /* ______________________________________ Media Query _________________________________________
@@ -226,12 +168,146 @@
 ___________________________________________________________________________________________________
 */
 
-@media only screen and (max-width: 1200px) {
+@media only screen and (min-width: 200px) and (max-width: 800px) {
+  .top-img {
+    background-position: bottom;
+    background-image: linear-gradient(to bottom, #01253d 45%, transparent),
+      url("../images/top-img.svg");
+    padding: 1rem;
+    padding-top: 4rem;
+    height: 33rem;
+  }
+  .top-img .headding {
+    line-height: 37px;
+    margin-bottom: 2rem;
+    font-size: 32px;
+  }
+  .introduction-mobile {
+    display: block;
+  }
+  .introduction-desktop {
+    display: none;
+  }
+  .top-introduction-img {
+    width: 360px;
+  }
+  .top-cards {
+    padding-top: 3.5rem;
+  }
+  .top-cards > div > div:first-child {
+    border: 0;
+    border-right: 2px;
+    border-style: dashed;
+    border-color: var(--white);
+    padding-top: 1.5rem;
+    padding-right: 1rem;
+    font-size: 3rem;
+    font-weight: 900;
+  }
+  .top-cards > div > div:nth-child(2) {
+    font-size: 25px;
+    line-height: 33.63px;
+  }
+  .top-cards p {
+    font-size: 12px;
+  }
+  .center-img {
+    height: 10rem;
+  }
+  .center-text-mobile {
+    display: block;
+  }
+  .center-text-desktop {
+    display: none;
+  }
+  .bottom-cards {
+    margin-top: 1rem;
+  }
+  .bottom-cards .core-values-icon1 {
+    width: 70px;
+    height: 69px;
+    background-size: cover;
+  }
+  .bottom-cards .core-values-icon2 {
+    width: 70px;
+    height: 69px;
+    background-size: cover;
+  }
+  .bottom-cards .core-values-icon3 {
+    width: 70px;
+    height: 69px;
+    background-size: cover;
+  }
+  .bottom-cards .core-values-icon4 {
+    width: 70px;
+    height: 69px;
+    background-size: cover;
+  }
+  .bottom-cards .core-values-icon5 {
+    width: 70px;
+    height: 69px;
+    background-size: cover;
+  }
+  .bottom-cards .core-values-icon6 {
+    width: 70px;
+    height: 69px;
+    background-size: cover;
+  }
+  .bottom-cards {
+    height: 16rem;
+  }
+  .bottom-cards h3 {
+    font-size: 25px;
+    margin-bottom: 0.5rem !important;
+    font-weight: 500;
+  }
+  .bottom-cards p {
+    font-size: 12px;
+  }
+  .why-choose > h3 {
+    font-weight: 600;
+    font-size: 30px !important;
+  }
+  .why-choose-child h3 {
+    font-size: 18px !important;
+    margin-bottom: 0.5rem;
+  }
+  .para-why-choose-mobile {
+    display: block;
+    font-size: 12px;
+  }
+  .para-why-choose-desktop {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 800px) and (max-width: 1200px) {
   .top-img .headding {
     font-size: 2rem;
   }
+  .introduction-mobile {
+    display: none;
+  }
 
   .top-introduction-img {
-    width: 400px;
+    width: 617px;
+  }
+  .center-text-mobile {
+    display: block;
+  }
+  .center-text-desktop {
+    display: none;
+  }
+}
+@media only screen and (min-width: 1200px) and (max-width: 1600px) {
+  .top-img .headding {
+    font-size: 4.5rem;
+  }
+  .introduction-mobile {
+    display: none;
+  }
+
+  .top-introduction-img {
+    width: 617px;
   }
 }

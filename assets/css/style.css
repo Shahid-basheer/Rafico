@@ -55,6 +55,9 @@ li {
   list-style: none;
 }
 
+a {
+  text-decoration: none;
+}
 /* Chrome, Safari, Edge, Opera */
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
@@ -65,4 +68,139 @@ input::-webkit-inner-spin-button {
 /* Firefox */
 input[type="number"] {
   -moz-appearance: textfield;
+}
+
+/* Footer for desktop */
+
+.footer {
+  width: 100%;
+  height: auto;
+  background: var(--deepNavy);
+  color: var(--white);
+}
+
+.email-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 27px;
+  background: var(--magenta);
+  padding: 11px;
+  padding-top: 8px;
+  cursor: pointer;
+}
+.phone-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 27px;
+  background: var(--magenta);
+  padding: 11px;
+  padding-top: 8px;
+  cursor: pointer;
+}
+
+.map-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 27px;
+  background: var(--magenta);
+  padding: 13px;
+  padding-top: 8px;
+  cursor: pointer;
+  color: var(--white);
+}
+
+.footer-icons {
+  width: 30px;
+  height: 30px;
+  border-radius: 25px;
+  background: var(--magenta);
+  padding: 8px;
+  padding-top: 3px;
+  cursor: pointer;
+  color: var(--white);
+}
+.footer-icons:nth-child(3) {
+  padding: 6px;
+  padding-top: 2px;
+}
+.footer-links {
+  padding: 0;
+}
+
+.footer-links > li {
+  margin-top: 1rem;
+}
+.footer-links > li > a {
+  text-decoration: none;
+  color: var(--white);
+}
+
+.footer .hr-line {
+  width: 100%;
+  border: 0;
+  border-top: 1px;
+  border-style: solid;
+  border-color: #4e5683;
+  margin-top: 1.5rem;
+  padding: 1rem;
+}
+
+.footer-icons-mobile {
+  border: 0;
+  border-bottom: 1px;
+  border-style: solid;
+  border-color: #4e5683;
+}
+
+/* Footer for mobile */
+.footer-mobile {
+  display: none;
+}
+
+@media only screen and (min-width: 200px) and (max-width: 800px) {
+  .footer-mobile {
+    display: block;
+  }
+  .footer-desktop {
+    display: none;
+  }
+
+  .email-icon {
+    width: 27px;
+    height: 27px;
+    border-radius: 27px;
+    background: var(--magenta);
+    padding: 5px;
+    padding-top: 1px;
+    cursor: pointer;
+  }
+  .phone-icon {
+    width: 27px;
+    height: 27px;
+    border-radius: 27px;
+    background: var(--magenta);
+    padding: 5px;
+    padding-top: 1px;
+    cursor: pointer;
+  }
+
+  .map-icon {
+    width: 27px;
+    height: 27px;
+    border-radius: 27px;
+    background: var(--magenta);
+    padding: 5px;
+    padding-top: 2px;
+    cursor: pointer;
+    color: var(--white);
+  }
+  .footer .hr-line {
+    padding: 1.4rem 0 1.4rem 0rem;
+  }
+}
+
+@media only screen and (min-width: 800px) and (max-width: 1200px) {
+  .footer-mobile {
+    display: none;
+  }
 }

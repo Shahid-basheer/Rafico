@@ -4,14 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Us</title>
-    <link rel="stylesheet" href="../assets/css/style.css" />
-    <link rel="stylesheet" href="../assets/css/about_us.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- Bootstrap min.csss-->
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
     />
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <link rel="stylesheet" href="../assets/css/about_us.css" />
 </head>
 <body>
     <!-- Navbar -->
@@ -59,19 +59,24 @@
       <!-- Top Image Section-->
       <section id="top-img">
         <div class="top-img">
-          <h1>Our Story of <br> Excellence</h1>
+          <div class="container">
+            <h1>Our Story of <br> Excellence</h1>
+          </div>
         </div>
       </section>
      <!-- About Section -->
       <section id="content" class="bg-lightWhite pt-5 pb-5">
         <div class="container">
-          <div class="row flex-wrap pt-5 pb-3">
-            <div class="col">
+          <div class="row flex-wrap pt-5 pb-3 about-row">
+            <div class="col about-desktop-img">
               <img class="about-img" src="../assets/images/about-img-about_us.svg" alt="">
             </div>
-            <div class="col">
-              <h3 class="fs-1 fw-bold mb-3 mt-5">About Us</h3>
-              <p class="text-gray fw-normal">At Rafico, our journey commenced in 2013 under visionary leadership. Our unwavering commitment to excellence and quality is the driving force behind every aspect of ouroperations. In alignment with our dedication to providing top-tier products, we are proud to announce our strategic collaboration with Brandfolio LLC, UAE. This partnership has not only elevated our standards but has also positioned us as a prominent player in showcasing and distributing premium brands. Together, we are setting a new benchmark in the wholesale distribution of branded footwear, redefining standards in this dynamic and competitive industry.</p>
+            <div class="col about-column">
+              <h3 class="fs-1 fw-bold mb-3 mt-5 about-headding">About Us</h3>
+              <p class="text-gray fw-normal about-para">At Rafico, our journey commenced in 2013 under visionary leadership. Our unwavering commitment to excellence and quality is the driving force behind every aspect of ouroperations. In alignment with our dedication to providing top-tier products, we are proud to announce our strategic collaboration with Brandfolio LLC, UAE. This partnership has not only elevated our standards but has also positioned us as a prominent player in showcasing and distributing premium brands. Together, we are setting a new benchmark in the wholesale distribution of branded footwear, redefining standards in this dynamic and competitive industry.</p>
+            </div>
+            <div class="col about-mobile-img">
+              <img class="about-img" src="../assets/images/about-img-about_us.svg" alt="">
             </div>
           </div>
         </div>
@@ -81,11 +86,11 @@
 
       <section id="wht-we-do">
       <div class="container pt-5 pb-5">
-        <div class="row pt-5 pb-5">
-          <div class="col">
+        <div class="row pt-5 pb-5 wht-we-do-row">
+          <div class="col wht-we-do-column">
             <div>
-              <h3 class="fw-bold mb-4">What We Do</h3>
-              <p class="text-gray">Rafico specializes in the wholesale distribution of renowned branded footwear, offering an extensive range of styles and sizes. Our portfolio includes sports shoes, casual footwear, and formal shoes from globally recognized brands. We take pride in catering to the diverse needs of our clients, ensuring a comprehensive and fashionable collection.</p>
+              <h3 class="fw-bold mb-4 wht-we-do-headding">What We Do</h3>
+              <p class="text-gray wht-we-do-para">Rafico specializes in the wholesale distribution of renowned branded footwear, offering an extensive range of styles and sizes. Our portfolio includes sports shoes, casual footwear, and formal shoes from globally recognized brands. We take pride in catering to the diverse needs of our clients, ensuring a comprehensive and fashionable collection.</p>
             </div>
           </div>
           <div class="col">
@@ -95,12 +100,12 @@
       </div>
       </section>
 
-      <!-- Vision and Mission Section -->
-      <section id="vision-mission">
+      <!-- Vision and Mission Section for desktop -->
+      <section id="vision-mission-desktop">
        <div class="container-fluid">
         <div class="row">
           <div class="col p-0">
-            <div class="d-flex bg-lightWhite p-5">
+            <div class="d-flex bg-lightWhite p-5 vision-flex">
               <div class="mx-auto">
                 <h3 class="fw-bold">Our Vision</h3>
                 <p class="text-gray">Rafico aspires to be the preferred <br> global partner, setting new standards <br> of excellence in the distribution <br> of quality footwear.</p>
@@ -111,7 +116,7 @@
             </div>
             </div>
           <div class="col p-0">
-            <div class="d-flex bg-deep-navy-blue text-white p-5">
+            <div class="d-flex bg-deep-navy-blue text-white p-5 vision-flex">
               <div class="mx-auto">
                 <h3 class="fw-bold">Our Mission</h3>
                 <p>Our mission is to consistently provide premium <br> branded footwear, fostering
@@ -119,6 +124,37 @@
                   terms of quality and service.</p>
               </div>
               <div>
+                <img class="mt-3" src="../assets/images/arrow-icon-about_us.svg" alt="arrow-img">
+              </div>
+            </div>
+          </div>
+        </div>
+       </div>
+      </section>
+      <!-- Vision and Mission Section for mobile -->
+      <section id="vision-mission-mobile">
+       <div class="container-fluid">
+        <div class="row">
+          <div class="col-12 p-0">
+            <div class="d-flex flex-column bg-lightWhite p-5">
+              <div>
+                <h3 class="fw-bold mb-3">Our Vision</h3>
+                <p class="text-gray">Rafico aspires to be the preferred  global partner, setting new standards  of excellence in the distribution  of quality footwear.</p>
+              </div>
+              <div class="d-flex justify-content-end">
+                <img class="mt-4 text-center" src="../assets/images/eye-icon-about_us.svg" alt="">
+              </div>
+            </div>
+            </div>
+          <div class="col-12 p-0">
+            <div class="d-flex flex-column bg-deep-navy-blue text-white p-5">
+              <div>
+                <h3 class="fw-bold mb-3">Our Mission</h3>
+                <p>Our mission is to consistently provide premium  branded footwear, fostering
+                  long-term relationships  with clients and surpassing their expectations in
+                  terms of quality and service.</p>
+              </div>
+              <div class="d-flex justify-content-end">
                 <img class="mt-3" src="../assets/images/arrow-icon-about_us.svg" alt="arrow-img">
               </div>
             </div>
@@ -157,67 +193,184 @@
 
       <!-- Footer section -->
       <section id="footer">
-        <div class="footer">
-          <div class="footer-wrapper">
-              <div class="row">
-                  <div class="col">
-                      <div class="mb-4">
-                          <img src="../assets/images/footer logo.svg" alt="">
-                      </div>
-                      <p class="mb-5">At Rafico, we're dedicated to revolutionizing the <br> wholesale footwear distribution industry. Since 2013,<br> our commitment to excellence and strategic <br> partnerships has set us apart as leaders in delivering <br> premium brands to global markets.</p>
-                      <div>
-                          <div class="d-inline-block email-icon mb-3">
-                              <i class="fa-regular fa-envelope"></i>
-                          </div>
-                          <span class="mx-1">raficotrdg2013@gmail.com</span>
-                          <br>
-                          <div class="d-inline-block phone-icon">
-                              <i class="fa-solid fa-phone"></i>
-                          </div>
-                          <span class="mx-1">+971 4234 6466 | 971 5582 59898</span>
-                      </div>
-                  </div>
-                  <div class="col">
-                      <div class="mb-4 mt-4">
-                        <span class="fs-4 fw-bold">Pages</span>
-                      </div>
-                      <ul class="footer-links">
-                          <li><a href="#">Home</a></li>
-                          <li><a href="#">About Us</a></li>
-                          <li><a href="#">Products&Services</a></li>
-                          <li><a href="#">Contact</a></li>
-                      </ul>
-                    </div>
-                    <div class="col">
-                      <div class="mb-4 mt-4">
-                        <span class="fs-4 fw-bold">Address</span>
-                      </div>
-                      <p>207 ,Emirates Post Office Building <br> Street :Deira, Near Fish Roundabout <br> Po Box : DXB 121761 <br> United Arab Emirates</p>
-                    <div class="d-flex  gap-1 mt-5 pt-4">
-                        <div class="footer-icons">
-                            <i class="fa-brands fa-facebook"></i>
-                        </div>
-                        <div class="footer-icons">
-                            <i class="fa-brands fa-pinterest"></i>
-                        </div>
-                        <div class="footer-icons">
-                            <i class="fa-brands fa-youtube"></i>
-                        </div>
-                        <div class="footer-icons">
-                            <i class="fa-brands fa-instagram"></i>
-                        </div>
-                    </div>
-  
-                  </div>
+        <!-- Footer for desktop -->
+    <div class="footer pt-4 footer-desktop">
+      <div class="container pt-5">
+        <div class="row">
+          <div class="col">
+            <div class="mb-4">
+              <img src="../assets/images/footer logo.svg" alt="" />
+            </div>
+            <p class="mb-5">
+              At Rafico, we're dedicated to revolutionizing the <br />
+              wholesale footwear distribution industry. Since 2013,<br />
+              our commitment to excellence and strategic <br />
+              partnerships has set us apart as leaders in delivering <br />
+              premium brands to global markets.
+            </p>
+            <div class="d-flex align-items-center gap-2 mb-3">
+              <div class="email-icon">
+                <i class="fa-regular fa-envelope text-white"></i>
               </div>
-          </div>
-          <div class="hr-line">
-            <div class="container">
-              <span>Copyright © RaficoGeneral Trading | Designed by GData Tachnology</span>
+              <div>
+                <span class="mx-1">raficotrdg2013@gmail.com</span>
+              </div>
+            </div>
+            <div class="d-flex align-items-center gap-2 mb-3">
+              <div class="phone-icon">
+                <i class="fa-solid fa-phone text-white"></i>
+              </div>
+              <div>
+                <span>+971 4234 6466 | 971 5582 59898</span>
+              </div>
+            </div>
+            <div class="d-flex align-items-center gap-2 mb-3">
+              <div class="map-icon">
+                <i class="fa-solid fa-location-dot"></i>
+              </div>
+              <div>
+                <span class="mx-1"
+                  >207 ,Emirates Post Office Building Street :Deira, Near Fish
+                  <br />
+                  Roundabout Po Box : DXB 121761 United Arab Emirates</span
+                >
+              </div>
             </div>
           </div>
+          <div class="col">
+            <div class="mb-4 mt-4">
+              <span class="fs-4 fw-bold">Pages</span>
+            </div>
+            <ul class="footer-links">
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Products&Services</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </div>
+          <div class="col">
+            <div class="mb-4 mt-4">
+              <span class="fs-4 fw-bold">Address</span>
+            </div>
+            <p>
+              207 ,Emirates Post Office Building <br />
+              Street :Deira, Near Fish Roundabout <br />
+              Po Box : DXB 121761 <br />
+              United Arab Emirates
+            </p>
+            <div class="d-flex gap-1 mt-5 pt-4">
+              <div class="footer-icons">
+                <i class="fa-brands fa-facebook"></i>
+              </div>
+              <div class="footer-icons">
+                <i class="fa-brands fa-pinterest"></i>
+              </div>
+              <div class="footer-icons">
+                <i class="fa-brands fa-youtube"></i>
+              </div>
+              <div class="footer-icons">
+                <i class="fa-brands fa-instagram"></i>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
+      <div class="hr-line">
+        <div class="container">
+          <span
+            >Copyright © RaficoGeneral Trading | Designed by GData
+            Tachnology</span
+          >
+        </div>
+      </div>
+    </div>
 
+      <!-- Footer Section for mobile -->
+    <div class="footer pt-4 footer-mobile">
+      <div class="container pt-5">
+        <div class="row">
+          <div class="col">
+            <div class="mb-4">
+              <img src="../assets/images/footer logo.svg" alt="" />
+            </div>
+            <p class="mb-5" style="font-size: 12px">
+              At Rafico, we're dedicated to revolutionizing the wholesale
+              footwear distribution industry. Since 2013, our commitment to
+              excellence and strategic partnerships has set us apart as leaders
+              in delivering premium brands to global markets.
+            </p>
+            <div class="d-flex align-items-center gap-2 mb-3">
+              <div class="email-icon">
+                <i class="fa-regular fa-envelope text-white"></i>
+              </div>
+              <div>
+                <span class="mx-1 fs-6">raficotrdg2013@gmail.com</span>
+              </div>
+            </div>
+            <div class="d-flex align-items-center gap-2 mb-3">
+              <div class="phone-icon">
+                <i class="fa-solid fa-phone text-white"></i>
+              </div>
+              <div>
+                <span class="fs-6">+971 4234 6466 | 971 5582 59898</span>
+              </div>
+            </div>
+            <div class="d-flex align-items-center gap-2 mb-3">
+              <div class="map-icon">
+                <i class="fa-solid fa-location-dot"></i>
+              </div>
+              <div>
+                <span class="mx-1 fs-6"
+                  >207 ,Emirates Post Office Building Street :Deira, Near Fish
+                  <br />
+                  Roundabout Po Box : DXB 121761 United Arab Emirates</span
+                >
+              </div>
+            </div>
+            <div class="d-flex gap-1 mt-5 pt-4 pb-4 footer-icons-mobile">
+              <div class="footer-icons">
+                <i class="fa-brands fa-facebook"></i>
+              </div>
+              <div class="footer-icons">
+                <i class="fa-brands fa-pinterest"></i>
+              </div>
+              <div class="footer-icons">
+                <i class="fa-brands fa-youtube"></i>
+              </div>
+              <div class="footer-icons">
+                <i class="fa-brands fa-instagram"></i>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="mt-4">
+              <span class="fs-4 fw-bold">Pages</span>
+            </div>
+              <div class="pt-1">
+                <a href="#" class="fs-6 text-white mx-2">Home</a> |
+                <a href="#" class="fs-6 text-white mx-2">About Us</a>
+              </div>
+              <div class="pt-1">
+                <a href="#" class="fs-6 text-white mx-2">Products&Services</a> |
+                <a href="#" class="fs-6 text-white mx-2">Contact</a>
+              </div>
+            <div class="mb-4 mt-4">
+              <span class="fs-4 fw-bold">Address</span>
+            </div>
+            <p class="fs-6">
+              207 ,Emirates Post Office Building Street :Deira, Near Fish
+              Roundabout Po Box : DXB 121761 United Arab Emirates
+            </p>
+          </div>
+        </div>
+        <div class="hr-line">
+          <span style="font-size: 12px"
+            >Copyright © RaficoGeneral Trading | Designed by GData
+            Tachnology</span
+          >
+        </div>
+      </div>
+    </div>
     
       </section>
 

@@ -4,8 +4,6 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contact Us</title>
-    <link rel="stylesheet" href="../assets/css/style.css" />
-    <link rel="stylesheet" href="../assets/css/contact_us.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
@@ -18,6 +16,8 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
     />
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <link rel="stylesheet" href="../assets/css/contact_us.css" />
   </head>
   <body>
     <!-- Navbar -->
@@ -83,19 +83,19 @@
     <section id="content">
       <div class="container pt-5 mb-5">
         <div class="row pt-3">
-          <div class="col-7">
+          <div class="col-7 wide-column">
             <span class="text-magenta">Contact Us</span>
-            <h1 class="fw-bold mt-3">Get in touch with us</h1>
-            <p class="text-gray">
+            <h1 class="fw-bold mt-3 contacts-headding1">Get in touch with us</h1>
+            <p class="text-gray contacts-para1">
               Thank you for your interest in Rafico. We're here to assist you
               with any inquiries or feedback you may have. Please feel free to
               reach out to us using the contact information below, or
               alternatively, you can fill out the contact form, and we'll get
               back to you as soon as possible.
             </p>
-            <div class="mt-5 pt-5">
+            <div class="mt-5 pt-5 social-icons">
               <div class="d-flex align-items-center gap-2 mb-3">
-                <div class="phone-icon">
+                <div class="phone-icon-contacts">
                   <i class="fa-solid fa-phone text-white"></i>
                 </div>
                 <div>
@@ -103,7 +103,7 @@
                 </div>
               </div>
               <div class="d-flex align-items-center gap-2 mb-3">
-                <div class="email-icon">
+                <div class="email-icon-contacts">
                   <i class="fa-regular fa-envelope text-white"></i>
                 </div>
                 <div>
@@ -111,7 +111,7 @@
                 </div>
               </div>
               <div class="d-flex align-items-center gap-2 mb-3">
-                <div class="map-icon">
+                <div class="map-icon-contacts">
                   <i class="fa-solid fa-location-dot"></i>
                 </div>
                 <div>
@@ -161,8 +161,12 @@
 
     <section id="map-section" class="bg-lightWhite pt-5">
       <div class="container">
-        <h3 class="text-center fw-bold mb-5">
+        <h3 class="text-center fw-bold mb-5 map-headding-desktop">
           Explore Rafico's reach with a glance at our service area map. <br> From local
+          to global, we're here to serve you.
+        </h3>
+        <h3 class="text-center fw-bold mb-5 map-headding-mobile">
+          Explore Rafico's reach <br> with a glance at our service area map. <br> From local
           to global, we're here to serve you.
         </h3>
         <div class="map-img">
@@ -235,79 +239,185 @@
 
     <!-- Footer section -->
     <section id="footer">
-      <div class="footer">
-        <div class="footer-wrapper">
-          <div class="row">
-            <div class="col">
-              <div class="mb-4">
-                <img src="../assets/images/footer logo.svg" alt="" />
-              </div>
-              <p class="mb-5">
-                At Rafico, we're dedicated to revolutionizing the <br />
-                wholesale footwear distribution industry. Since 2013,<br />
-                our commitment to excellence and strategic <br />
-                partnerships has set us apart as leaders in delivering <br />
-                premium brands to global markets.
-              </p>
-              <div>
-                <div class="d-inline-block email-icon mb-3">
-                  <i class="fa-regular fa-envelope"></i>
-                </div>
-                <span class="mx-1">raficotrdg2013@gmail.com</span>
+      <!-- Footer for desktop -->
+  <div class="footer pt-4 footer-desktop">
+    <div class="container pt-5">
+      <div class="row">
+        <div class="col">
+          <div class="mb-4">
+            <img src="../assets/images/footer logo.svg" alt="" />
+          </div>
+          <p class="mb-5">
+            At Rafico, we're dedicated to revolutionizing the <br />
+            wholesale footwear distribution industry. Since 2013,<br />
+            our commitment to excellence and strategic <br />
+            partnerships has set us apart as leaders in delivering <br />
+            premium brands to global markets.
+          </p>
+          <div class="d-flex align-items-center gap-2 mb-3">
+            <div class="email-icon">
+              <i class="fa-regular fa-envelope text-white"></i>
+            </div>
+            <div>
+              <span class="mx-1">raficotrdg2013@gmail.com</span>
+            </div>
+          </div>
+          <div class="d-flex align-items-center gap-2 mb-3">
+            <div class="phone-icon">
+              <i class="fa-solid fa-phone text-white"></i>
+            </div>
+            <div>
+              <span>+971 4234 6466 | 971 5582 59898</span>
+            </div>
+          </div>
+          <div class="d-flex align-items-center gap-2 mb-3">
+            <div class="map-icon">
+              <i class="fa-solid fa-location-dot"></i>
+            </div>
+            <div>
+              <span class="mx-1"
+                >207 ,Emirates Post Office Building Street :Deira, Near Fish
                 <br />
-                <div class="d-inline-block phone-icon">
-                  <i class="fa-solid fa-phone"></i>
-                </div>
-                <span class="mx-1">+971 4234 6466 | 971 5582 59898</span>
-              </div>
-            </div>
-            <div class="col">
-              <div class="mb-4 mt-4">
-                <span class="fs-4 fw-bold">Pages</span>
-              </div>
-              <ul class="footer-links">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About Us</a></li>
-                <li><a href="#">Products&Services</a></li>
-                <li><a href="#">Contact</a></li>
-              </ul>
-            </div>
-            <div class="col">
-              <div class="mb-4 mt-4">
-                <span class="fs-4 fw-bold">Address</span>
-              </div>
-              <p>
-                207 ,Emirates Post Office Building <br />
-                Street :Deira, Near Fish Roundabout <br />
-                Po Box : DXB 121761 <br />
-                United Arab Emirates
-              </p>
-              <div class="d-flex gap-1 mt-5 pt-4">
-                <div class="footer-icons">
-                  <i class="fa-brands fa-facebook"></i>
-                </div>
-                <div class="footer-icons">
-                  <i class="fa-brands fa-pinterest"></i>
-                </div>
-                <div class="footer-icons">
-                  <i class="fa-brands fa-youtube"></i>
-                </div>
-                <div class="footer-icons">
-                  <i class="fa-brands fa-instagram"></i>
-                </div>
-              </div>
+                Roundabout Po Box : DXB 121761 United Arab Emirates</span
+              >
             </div>
           </div>
         </div>
-        <div class="hr-line">
-          <div class="container">
-            <span
-              >Copyright © RaficoGeneral Trading | Designed by GData
-              Tachnology</span
-            >
+        <div class="col">
+          <div class="mb-4 mt-4">
+            <span class="fs-4 fw-bold">Pages</span>
+          </div>
+          <ul class="footer-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Products&Services</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+        <div class="col">
+          <div class="mb-4 mt-4">
+            <span class="fs-4 fw-bold">Address</span>
+          </div>
+          <p>
+            207 ,Emirates Post Office Building <br />
+            Street :Deira, Near Fish Roundabout <br />
+            Po Box : DXB 121761 <br />
+            United Arab Emirates
+          </p>
+          <div class="d-flex gap-1 mt-5 pt-4">
+            <div class="footer-icons">
+              <i class="fa-brands fa-facebook"></i>
+            </div>
+            <div class="footer-icons">
+              <i class="fa-brands fa-pinterest"></i>
+            </div>
+            <div class="footer-icons">
+              <i class="fa-brands fa-youtube"></i>
+            </div>
+            <div class="footer-icons">
+              <i class="fa-brands fa-instagram"></i>
+            </div>
           </div>
         </div>
       </div>
+    </div>
+    <div class="hr-line">
+      <div class="container">
+        <span
+          >Copyright © RaficoGeneral Trading | Designed by GData
+          Tachnology</span
+        >
+      </div>
+    </div>
+  </div>
+
+    <!-- Footer Section for mobile -->
+  <div class="footer pt-4 footer-mobile">
+    <div class="container pt-5">
+      <div class="row">
+        <div class="col">
+          <div class="mb-4">
+            <img src="../assets/images/footer logo.svg" alt="" />
+          </div>
+          <p class="mb-5" style="font-size: 12px">
+            At Rafico, we're dedicated to revolutionizing the wholesale
+            footwear distribution industry. Since 2013, our commitment to
+            excellence and strategic partnerships has set us apart as leaders
+            in delivering premium brands to global markets.
+          </p>
+          <div class="d-flex align-items-center gap-2 mb-3">
+            <div class="email-icon">
+              <i class="fa-regular fa-envelope text-white"></i>
+            </div>
+            <div>
+              <span class="mx-1 fs-6">raficotrdg2013@gmail.com</span>
+            </div>
+          </div>
+          <div class="d-flex align-items-center gap-2 mb-3">
+            <div class="phone-icon">
+              <i class="fa-solid fa-phone text-white"></i>
+            </div>
+            <div>
+              <span class="fs-6">+971 4234 6466 | 971 5582 59898</span>
+            </div>
+          </div>
+          <div class="d-flex align-items-center gap-2 mb-3">
+            <div class="map-icon">
+              <i class="fa-solid fa-location-dot"></i>
+            </div>
+            <div>
+              <span class="mx-1 fs-6"
+                >207 ,Emirates Post Office Building Street :Deira, Near Fish
+                <br />
+                Roundabout Po Box : DXB 121761 United Arab Emirates</span
+              >
+            </div>
+          </div>
+          <div class="d-flex gap-1 mt-5 pt-4 pb-4 footer-icons-mobile">
+            <div class="footer-icons">
+              <i class="fa-brands fa-facebook"></i>
+            </div>
+            <div class="footer-icons">
+              <i class="fa-brands fa-pinterest"></i>
+            </div>
+            <div class="footer-icons">
+              <i class="fa-brands fa-youtube"></i>
+            </div>
+            <div class="footer-icons">
+              <i class="fa-brands fa-instagram"></i>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="mt-4">
+            <span class="fs-4 fw-bold">Pages</span>
+          </div>
+            <div class="pt-1">
+              <a href="#" class="fs-6 text-white mx-2">Home</a> |
+              <a href="#" class="fs-6 text-white mx-2">About Us</a>
+            </div>
+            <div class="pt-1">
+              <a href="#" class="fs-6 text-white mx-2">Products&Services</a> |
+              <a href="#" class="fs-6 text-white mx-2">Contact</a>
+            </div>
+          <div class="mb-4 mt-4">
+            <span class="fs-4 fw-bold">Address</span>
+          </div>
+          <p class="fs-6">
+            207 ,Emirates Post Office Building Street :Deira, Near Fish
+            Roundabout Po Box : DXB 121761 United Arab Emirates
+          </p>
+        </div>
+      </div>
+      <div class="hr-line">
+        <span style="font-size: 12px"
+          >Copyright © RaficoGeneral Trading | Designed by GData
+          Tachnology</span
+        >
+      </div>
+    </div>
+  </div>
+  
     </section>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="../scripts/contact_us.js"></script>

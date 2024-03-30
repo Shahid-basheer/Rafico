@@ -17,7 +17,10 @@
 }
 
 .product-btn {
-  width: 12rem;
+  min-width: 6.4rem;
+}
+.product-btn button {
+  width: 100%;
   height: 50px;
   padding: 14px 0px 18px 0px;
   color: var(--deepNavy);
@@ -29,7 +32,7 @@
   font-size: 16px;
 }
 
-.active-btn {
+.product-btn .active-btn {
   background: var(--deepNavy);
   color: var(--white);
 }
@@ -131,71 +134,27 @@
   margin-top: 2rem;
 }
 
-/* Footer */
+/* ______________________________________ Media Query _________________________________________
 
-.footer {
-  width: 100%;
-  height: auto;
-  background: var(--deepNavy);
-  color: var(--white);
-}
+---------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------
+___________________________________________________________________________________________________
+*/
 
-.footer-wrapper {
-  padding: 7rem;
-  padding-bottom: 0;
-}
-
-.email-icon {
-  width: 40px;
-  height: 40px;
-  border-radius: 27px;
-  background: var(--magenta);
-  padding: 11px;
-  padding-top: 8px;
-  cursor: pointer;
-}
-.phone-icon {
-  width: 40px;
-  height: 40px;
-  border-radius: 27px;
-  background: var(--magenta);
-  padding: 11px;
-  padding-top: 8px;
-  cursor: pointer;
+@media only screen and (min-width: 200px) and (max-width: 800px) {
+  .top-img {
+    height: 247px;
+    padding-top: 5rem;
+    background-image: linear-gradient(to right, #01253d 20%, transparent),
+      url("../images/products-top-mobile-img.svg");
+    background-size: cover;
+  }
+  .top-img div > h1 {
+    font-size: 32px;
+  }
 }
 
-.footer-icons {
-  width: 30px;
-  height: 30px;
-  border-radius: 25px;
-  background: var(--magenta);
-  padding: 8px;
-  padding-top: 3px;
-  cursor: pointer;
-  color: var(--white);
+@media only screen and (min-width: 800px) and (max-width: 1200px) {
 }
-.footer-icons:nth-child(3) {
-  padding: 6px;
-  padding-top: 2px;
-}
-.footer-links {
-  padding: 0;
-}
-
-.footer-links > li {
-  margin-top: 1rem;
-}
-.footer-links > li > a {
-  text-decoration: none;
-  color: var(--white);
-}
-
-.footer .hr-line {
-  width: 100%;
-  border: 0;
-  border-top: 1px;
-  border-style: solid;
-  border-color: #4e5683;
-  margin-top: 1.5rem;
-  padding: 1rem;
+@media only screen and (min-width: 1200px) and (max-width: 1600px) {
 }

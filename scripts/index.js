@@ -16,11 +16,11 @@ document.addEventListener("DOMContentLoaded", function () {
       entries.forEach(function (entry) {
         if (entry.isIntersecting && window.innerWidth > 800) {
           element.style.backgroundImage =
-            " linear-gradient(to right, #01253d 40%, transparent),url(../assets/images/top-img.svg)";
+            " linear-gradient(to right, #01253d 40%, transparent),url(./assets/images/top-img.svg)";
           observer.unobserve(entry.target);
         } else {
           element.style.backgroundImage =
-            "linear-gradient(to bottom, #01253d 45%, transparent),url(../assets/images/top-img.svg)";
+            "linear-gradient(to bottom, #01253d 45%, transparent),url(./assets/images/top-img.svg)";
         }
       });
     },
@@ -54,7 +54,7 @@ document.addEventListener("DOMContentLoaded", function () {
       entries.forEach(function (entry) {
         if (entry.isIntersecting) {
           element.style.backgroundImage =
-            "url(../assets/images/home_center-img.svg)";
+            "url(./assets/images/home_center-img.svg)";
           observer.unobserve(entry.target);
         }
       });
@@ -72,7 +72,7 @@ document.addEventListener("DOMContentLoaded", function () {
       entries.forEach(function (entry) {
         if (entry.isIntersecting) {
           element.style.backgroundImage =
-            "url(../assets/images/home-core-values1.svg)";
+            "url(./assets/images/home-core-values1.svg)";
           observer.unobserve(entry.target);
         }
       });
@@ -89,7 +89,7 @@ document.addEventListener("DOMContentLoaded", function () {
       entries.forEach(function (entry) {
         if (entry.isIntersecting) {
           element.style.backgroundImage =
-            "url(../assets/images/home-core-values2.svg)";
+            "url(./assets/images/home-core-values2.svg)";
           observer.unobserve(entry.target);
         }
       });
@@ -106,7 +106,7 @@ document.addEventListener("DOMContentLoaded", function () {
       entries.forEach(function (entry) {
         if (entry.isIntersecting) {
           element.style.backgroundImage =
-            "url(../assets/images/home-core-values3.svg)";
+            "url(./assets/images/home-core-values3.svg)";
           observer.unobserve(entry.target);
         }
       });
@@ -123,7 +123,7 @@ document.addEventListener("DOMContentLoaded", function () {
       entries.forEach(function (entry) {
         if (entry.isIntersecting) {
           element.style.backgroundImage =
-            "url(../assets/images/home-core-values4.svg)";
+            "url(./assets/images/home-core-values4.svg)";
           observer.unobserve(entry.target);
         }
       });
@@ -140,7 +140,7 @@ document.addEventListener("DOMContentLoaded", function () {
       entries.forEach(function (entry) {
         if (entry.isIntersecting) {
           element.style.backgroundImage =
-            "url(../assets/images/home-core-values5.svg)";
+            "url(./assets/images/home-core-values5.svg)";
           observer.unobserve(entry.target);
         }
       });
@@ -157,7 +157,7 @@ document.addEventListener("DOMContentLoaded", function () {
       entries.forEach(function (entry) {
         if (entry.isIntersecting) {
           element.style.backgroundImage =
-            "url(../assets/images/home-core-values6.svg)";
+            "url(./assets/images/home-core-values6.svg)";
           observer.unobserve(entry.target);
         }
       });

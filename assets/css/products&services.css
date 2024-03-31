@@ -2,13 +2,14 @@
 .top-img {
   width: 100%;
   height: 384px;
-  background-image: linear-gradient(to right, #01253d 20%, transparent),
-    url("../images/products-top-img.svg");
+  /* background-image: linear-gradient(to right, #01253d 20%, transparent),
+    url("../images/products-top-img.svg"); */
+  background: var(--deepNavy);
   background-repeat: no-repeat;
   background-position: right top;
   padding-top: 10rem;
   color: var(--white);
-  margin-top: 3rem;
+  margin-top: 5.9rem;
 }
 
 .top-img h1 {
@@ -45,7 +46,8 @@
 .pro-img1 {
   min-width: 22rem;
   height: 20rem;
-  background-image: url("../images/products-mens-shoe1.svg");
+  /* background-image: url("../images/products-mens-shoe1.svg"); */
+  background: var(--lightWhite);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -54,7 +56,8 @@
 .pro-img2 {
   min-width: 22rem;
   height: 20rem;
-  background-image: url("../images/products-mens-shoe2.svg");
+  background: var(--lightWhite);
+  /* background-image: url("../images/products-mens-shoe2.svg"); */
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -63,7 +66,8 @@
 .pro-img3 {
   min-width: 22rem;
   height: 20rem;
-  background-image: url("../images/products-mens-shoe3.svg");
+  background: var(--lightWhite);
+  /* background-image: url("../images/products-mens-shoe3.svg"); */
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -72,7 +76,8 @@
 .pro-img4 {
   min-width: 22rem;
   height: 20rem;
-  background-image: url("../images/products-mens-shoe4.svg");
+  background: var(--lightWhite);
+  /* background-image: url("../images/products-mens-shoe4.svg"); */
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -81,7 +86,8 @@
 .pro-img5 {
   min-width: 22rem;
   height: 20rem;
-  background-image: url("../images/products-mens-shoe5.svg");
+  background: var(--lightWhite);
+  /* background-image: url("../images/products-mens-shoe5.svg"); */
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -90,7 +96,8 @@
 .pro-img6 {
   min-width: 22rem;
   height: 20rem;
-  background-image: url("../images/products-mens-shoe6.svg");
+  background: var(--lightWhite);
+  /* background-image: url("../images/products-mens-shoe6.svg"); */
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -100,7 +107,8 @@
 .unboxing-shoes-img1 {
   min-width: 23rem;
   height: 33rem;
-  background-image: url("../images/products-mens-boys1.svg");
+  background: var(--lightWhite);
+  /* background-image: url("../images/products-mens-boys1.svg"); */
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -108,7 +116,8 @@
 .unboxing-shoes-img2 {
   min-width: 23rem;
   height: 33rem;
-  background-image: url("../images/products-mens-boys2.svg");
+  background: var(--lightWhite);
+  /* background-image: url("../images/products-mens-boys2.svg"); */
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -116,22 +125,11 @@
 .unboxing-shoes-img3 {
   min-width: 23rem;
   height: 33rem;
-  background-image: url("../images/products-mens-boys3.svg");
+  background: var(--lightWhite);
+  /* background-image: url("../images/products-mens-boys3.svg"); */
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-}
-
-/*Client Logo*/
-.client-logo {
-  width: 100%;
-  height: 13rem;
-  background: var(--lightWhite);
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  overflow: hidden;
-  margin-top: 2rem;
 }
 
 /* ______________________________________ Media Query _________________________________________

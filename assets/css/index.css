@@ -4,20 +4,22 @@
 .top-img {
   width: 100%;
   height: 100vh;
-  background-image: linear-gradient(to right, #01253d 40%, transparent),
-    url("../images/top-img.svg");
+  /* background-image: linear-gradient(to right, #01253d 40%, transparent),
+    url("../images/top-img.svg"); */
+  background: var(--deepNavy);
   background-repeat: no-repeat;
   background-position: right top;
   background-size: contain;
   color: var(--white);
   padding-top: 10rem;
   font-size: 16px;
-  margin-top: 3.5rem;
+  margin-top: 5.9rem;
 }
 
 .top-img .headding {
   font-size: 4.5rem;
   font-weight: 700;
+  margin-bottom: 1rem;
 }
 .top-cards {
   min-width: 22rem;
@@ -67,7 +69,7 @@
 .center-img {
   width: 100%;
   height: 20rem;
-  background-image: url("../images/home_center-img.svg");
+  /* background-image: url("../images/home_center-img.svg"); */
   background-repeat: no-repeat;
   background-size: 100%;
   margin-top: 5rem;
@@ -95,58 +97,48 @@
 .bottom-cards .core-values-icon1 {
   width: 76px;
   height: 76px;
-  background-image: url("../images/home-core-values1.svg");
+  /* background-image: url("../images/home-core-values1.svg"); */
   border-radius: 8px;
   margin-bottom: 1.5rem;
 }
 .bottom-cards .core-values-icon2 {
   width: 76px;
   height: 76px;
-  background-image: url("../images/home-core-values2.svg");
+  /* background-image: url("../images/home-core-values2.svg"); */
   border-radius: 8px;
   margin-bottom: 1.5rem;
 }
 .bottom-cards .core-values-icon3 {
   width: 76px;
   height: 76px;
-  background-image: url("../images/home-core-values3.svg");
+  /* background-image: url("../images/home-core-values3.svg"); */
   border-radius: 8px;
   margin-bottom: 1.5rem;
 }
 .bottom-cards .core-values-icon4 {
   width: 76px;
   height: 76px;
-  background-image: url("../images/home-core-values4.svg");
+  /* background-image: url("../images/home-core-values4.svg"); */
   border-radius: 8px;
   margin-bottom: 1.5rem;
 }
 .bottom-cards .core-values-icon5 {
   width: 76px;
   height: 76px;
-  background-image: url("../images/home-core-values5.svg");
+  /* background-image: url("../images/home-core-values5.svg"); */
   border-radius: 8px;
   margin-bottom: 1.5rem;
 }
 .bottom-cards .core-values-icon6 {
   width: 76px;
   height: 76px;
-  background-image: url("../images/home-core-values6.svg");
+  /* background-image: url("../images/home-core-values6.svg"); */
   border-radius: 8px;
   margin-bottom: 1.5rem;
 }
 
 .bottom-cards p {
   text-transform: capitalize;
-}
-
-/*Client Logo*/
-.client-logo {
-  width: 100%;
-  height: 13rem;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  overflow: hidden;
 }
 
 /* Why choose */
@@ -171,8 +163,8 @@ ________________________________________________________________________________
 @media only screen and (min-width: 200px) and (max-width: 800px) {
   .top-img {
     background-position: bottom;
-    background-image: linear-gradient(to bottom, #01253d 45%, transparent),
-      url("../images/top-img.svg");
+    /* background-image: linear-gradient(to bottom, #01253d 45%, transparent),
+      url("../images/top-img.svg"); */
     padding: 1rem;
     padding-top: 4rem;
     height: 33rem;
@@ -264,6 +256,7 @@ ________________________________________________________________________________
   .bottom-cards p {
     font-size: 12px;
   }
+
   .why-choose > h3 {
     font-weight: 600;
     font-size: 30px !important;

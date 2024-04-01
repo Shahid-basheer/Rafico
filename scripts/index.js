@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", function () {
       entries.forEach(function (entry) {
         if (entry.isIntersecting && window.innerWidth > 800) {
           element.style.backgroundImage =
-            " linear-gradient(to right, #01253d 40%, transparent),url(./assets/images/top-img.svg)";
+            " linear-gradient(to right, #01253d 40%, transparent),url(https://res.cloudinary.com/dnvykpdlo/image/upload/v1711964046/Rafico/top-img-home_bgw3pw.png)";
           observer.unobserve(entry.target);
         } else {
           element.style.backgroundImage =
@@ -54,7 +54,8 @@ document.addEventListener("DOMContentLoaded", function () {
       entries.forEach(function (entry) {
         if (entry.isIntersecting) {
           element.style.backgroundImage =
-            "url(./assets/images/home_center-img.svg)";
+            "url(https://res.cloudinary.com/dnvykpdlo/image/upload/v1711966169/Rafico/center-img_y6f2jd.png)";
+          entry.target.style.opacity = "1";
           observer.unobserve(entry.target);
         }
       });

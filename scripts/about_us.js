@@ -14,9 +14,13 @@ document.addEventListener("DOMContentLoaded", function () {
   var observer = new IntersectionObserver(
     function (entries, observer) {
       entries.forEach(function (entry) {
-        if (entry.isIntersecting) {
+        if (entry.isIntersecting && window.innerWidth > 1000) {
           element.style.backgroundImage =
-            "linear-gradient(to right, #01253d 20%, transparent),url(../assets/images/top-img-about_us.svg)";
+            "linear-gradient(to right, #01253d 20%, transparent),url(https://res.cloudinary.com/dnvykpdlo/image/upload/v1711964196/Rafico/top-img-about_us_odsgpw.png)";
+          observer.unobserve(entry.target);
+        } else {
+          element.style.backgroundImage =
+            "linear-gradient(to right, #01253d 25%, transparent),url(https://res.cloudinary.com/dnvykpdlo/image/upload/v1711970121/Rafico/top-about-mobile-img_aqf1dw.png)";
           observer.unobserve(entry.target);
         }
       });

@@ -78,10 +78,11 @@
 .center-img {
   width: 100%;
   height: 20rem;
-  /* background-image: url("../images/home_center-img.svg"); */
   background-repeat: no-repeat;
   background-size: 100%;
   margin-top: 5rem;
+  opacity: 0;
+  transition: opacity 0.5s ease;
 }
 
 .center-text-mobile {

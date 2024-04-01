@@ -14,9 +14,13 @@ document.addEventListener("DOMContentLoaded", function () {
   var observer = new IntersectionObserver(
     function (entries, observer) {
       entries.forEach(function (entry) {
-        if (entry.isIntersecting) {
+        if (entry.isIntersecting && window.innerWidth > 1000) {
           element.style.backgroundImage =
-            "linear-gradient(to right, #01253d 20%, transparent),url(../assets/images/products-top-img.svg)";
+            "linear-gradient(to right, #01253d 20%, transparent),url(https://res.cloudinary.com/dnvykpdlo/image/upload/v1711964391/Rafico/top-img-product_iqhyz9.png)";
+          observer.unobserve(entry.target);
+        } else {
+          element.style.backgroundImage =
+            "url(https://res.cloudinary.com/dnvykpdlo/image/upload/v1711970410/Rafico/top-product-img-mobile_cmuzo8.png)";
           observer.unobserve(entry.target);
         }
       });
@@ -139,6 +143,7 @@ document.addEventListener("DOMContentLoaded", function () {
         if (entry.isIntersecting) {
           element.style.backgroundImage =
             "url(../assets/images/products-mens-boys1.svg)";
+          entry.target.style.opacity = "1";
           observer.unobserve(entry.target);
         }
       });
@@ -156,6 +161,7 @@ document.addEventListener("DOMContentLoaded", function () {
         if (entry.isIntersecting) {
           element.style.backgroundImage =
             "url(../assets/images/products-mens-boys2.svg)";
+          entry.target.style.opacity = "1";
           observer.unobserve(entry.target);
         }
       });
@@ -173,6 +179,7 @@ document.addEventListener("DOMContentLoaded", function () {
         if (entry.isIntersecting) {
           element.style.backgroundImage =
             "url(../assets/images/products-mens-boys3.svg)";
+          entry.target.style.opacity = "1";
           observer.unobserve(entry.target);
         }
       });

@@ -31,9 +31,16 @@
   outline: none;
   font-weight: 600;
   font-size: 16px;
+  transition: all 0.5s;
 }
 
 .product-btn .active-btn {
+  background: var(--deepNavy);
+  color: var(--white);
+  transition: all 0.5s;
+}
+
+.product-btn button:hover {
   background: var(--deepNavy);
   color: var(--white);
 }
@@ -74,16 +81,16 @@
   min-width: 23rem;
   height: 33rem;
   background: var(--lightWhite);
-  /* background-image: url("../images/products-mens-boys1.svg"); */
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  opacity: 0;
+  transition: opacity 0.5s ease;
 }
 .unboxing-shoes-img2 {
   min-width: 23rem;
   height: 33rem;
   background: var(--lightWhite);
-  /* background-image: url("../images/products-mens-boys2.svg"); */
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -92,7 +99,6 @@
   min-width: 23rem;
   height: 33rem;
   background: var(--lightWhite);
-  /* background-image: url("../images/products-mens-boys3.svg"); */
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;

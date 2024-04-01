@@ -32,7 +32,8 @@
 }
 
 .vision-flex {
-  height: 235px;
+  height: 334px;
+  align-items: center;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;

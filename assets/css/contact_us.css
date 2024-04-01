@@ -50,10 +50,24 @@
   cursor: pointer;
   color: var(--white);
 }
+
+.custom-modal-dialog {
+  max-width: 483px;
+  height: 488px;
+}
+
+.custom-modal-content {
+  width: 100%;
+  height: 488px;
+  overflow-y: auto;
+  background: var(--deepNavy);
+  border-radius: 12px;
+}
+
 /* Contact Forms */
 .contact-form {
   max-width: 30rem;
-  height: 36rem;
+  height: 35.2rem;
   background: var(--deepNavy);
   color: var(--white);
   padding: 2rem;
@@ -62,13 +76,13 @@
 }
 
 .contact-input {
-  max-width: 365px;
+  max-width: 385px;
   min-width: 250px;
   height: 60px;
   margin: 1rem;
 }
 .contact-input-textarea {
-  max-width: 365px;
+  max-width: 385px;
   min-width: 250px;
   height: 135px;
   margin: 1rem;
@@ -105,7 +119,7 @@
 }
 
 .submit-btn {
-  max-width: 365px;
+  max-width: 385px;
   min-width: 250px;
   height: 54px;
   margin: 1rem;
@@ -215,7 +229,7 @@ ________________________________________________________________________________
   /* Contact Forms */
   .contact-form {
     max-width: 30rem;
-    height: 30rem;
+    height: 28.5rem;
     background: var(--deepNavy);
     color: var(--white);
     padding: 2rem;
@@ -228,7 +242,7 @@ ________________________________________________________________________________
     margin-bottom: 0.5rem !important;
   }
   .contact-input {
-    max-width: 365px;
+    max-width: 385px;
     min-width: 250px;
     height: 42px;
     margin: 1rem;

@@ -82,3 +82,31 @@ document.addEventListener("DOMContentLoaded", function () {
 
   observer.observe(element);
 });
+
+// Handle contact form
+
+document.addEventListener("DOMContentLoaded", function () {
+  var contactForm = document.querySelector("#contact-form");
+  var myModal = new bootstrap.Modal(document.querySelector("#thanks-page"));
+  var errorForm = document.querySelector(".error-form");
+  var headding = document.querySelector(".form-headding");
+  contactForm.addEventListener("submit", function (event) {
+    event.preventDefault();
+
+    var formData = new FormData(contactForm);
+    fetch(contactForm.action, {
+      method: "post",
+      body: formData,
+    })
+      .then((res) => res.json())
+      .then((data) => {
+        myModal.show();
+        contactForm.reset();
+      })
+      .catch((error) => {
+        headding.classList.remove("mb-4");
+        errorForm.style.display = "block";
+        errorForm.innerHTML = "Something went wrong!";
+      });
+  });
+});

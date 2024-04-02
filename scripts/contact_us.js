@@ -95,6 +95,11 @@ document.addEventListener("DOMContentLoaded", function () {
   var myModal = new bootstrap.Modal(document.querySelector("#thanks-page"));
   var errorForm = document.querySelector(".error-form");
   var headding = document.querySelector(".form-headding");
+
+  myModal._element.addEventListener("hidden.bs.modal", function () {
+    window.location.reload();
+  });
+
   contactForm.addEventListener("submit", function (event) {
     event.preventDefault();
     var response = grecaptcha.getResponse();

@@ -11,13 +11,21 @@
   color: var(--white);
   padding-top: 10rem;
   font-size: 16px;
-  margin-top: 5.9rem;
+  margin-top: 5.8rem;
 }
 
 .top-img .headding {
   font-size: 4.5rem;
   font-weight: 700;
   margin-bottom: 1rem;
+}
+/* for mobile*/
+.top-img .headding-mobile {
+  display: none;
+  line-height: 37px;
+  margin-bottom: 1rem;
+  font-size: 32px;
+  font-weight: 600;
 }
 .top-cards {
   min-width: 22rem;
@@ -170,11 +178,13 @@ ________________________________________________________________________________
     padding: 1rem;
     padding-top: 4rem;
     height: 33rem;
+    margin-top: 4rem;
   }
   .top-img .headding {
-    line-height: 37px;
-    margin-bottom: 2rem;
-    font-size: 32px;
+    display: none;
+  }
+  .top-img .headding-mobile {
+    display: block;
   }
   .introduction-mobile {
     display: block;
@@ -187,6 +197,7 @@ ________________________________________________________________________________
   }
   .top-cards {
     padding-top: 3.5rem;
+    margin-bottom: 1.5rem;
   }
   .top-cards > div > div:first-child {
     border: 0;
@@ -205,14 +216,32 @@ ________________________________________________________________________________
   .top-cards p {
     font-size: 12px;
   }
+
+  .container-top-cards {
+    margin-bottom: 0rem !important;
+  }
+  .row-top-cards {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+  .row-container {
+    padding-top: 0rem !important;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    padding-bottom: 0rem !important;
+  }
   .center-img {
     height: 10rem;
+    margin-top: 0;
   }
   .center-text-mobile {
     display: block;
   }
   .center-text-desktop {
     display: none;
+  }
+  .bottom-cards-container {
+    padding-bottom: 0.5rem !important;
   }
   .bottom-cards {
     margin-top: 1rem;
@@ -259,6 +288,12 @@ ________________________________________________________________________________
     font-size: 12px;
   }
 
+  .why-choose {
+    padding-bottom: 0rem;
+  }
+  .why-choose-row2 {
+    padding-bottom: 2rem !important;
+  }
   .why-choose > h3 {
     font-weight: 600;
     font-size: 30px !important;
@@ -266,6 +301,15 @@ ________________________________________________________________________________
   .why-choose-child h3 {
     font-size: 18px !important;
     margin-bottom: 0.5rem;
+  }
+  /* Last column of why choose first row*/
+  .last-column {
+    margin-bottom: 0rem !important;
+  }
+
+  /* First column of why choose second row*/
+  .first-column {
+    margin-bottom: 0rem !important;
   }
   .para-why-choose-mobile {
     display: block;
@@ -292,6 +336,9 @@ ________________________________________________________________________________
   }
   .center-text-desktop {
     display: none;
+  }
+  .bottom-cards {
+    margin-top: 1rem;
   }
 }
 @media only screen and (min-width: 1200px) and (max-width: 1600px) {

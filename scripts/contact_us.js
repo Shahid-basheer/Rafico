@@ -99,7 +99,7 @@ document.addEventListener("DOMContentLoaded", function () {
     event.preventDefault();
     var response = grecaptcha.getResponse();
     if (!response) {
-      alert("Please complete the reCAPTCHA challenge.");
+      alert("Please verify the captcha");
       return;
     }
 

@@ -97,6 +97,11 @@ document.addEventListener("DOMContentLoaded", function () {
   var headding = document.querySelector(".form-headding");
   contactForm.addEventListener("submit", function (event) {
     event.preventDefault();
+    var response = grecaptcha.getResponse();
+    if (!response) {
+      alert("Please complete the reCAPTCHA challenge.");
+      return;
+    }
 
     var formData = new FormData(contactForm);
     fetch(contactForm.action, {

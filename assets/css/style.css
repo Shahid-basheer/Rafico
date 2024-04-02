@@ -84,8 +84,9 @@ input[type="number"] {
   height: 18rem;
   white-space: nowrap;
   overflow: hidden;
-  padding: 5rem 0;
   background: var(--lightWhite);
+  display: flex;
+  align-items: center;
 }
 
 .client-logo .gallery {
@@ -225,8 +226,8 @@ input[type="number"] {
     height: 27px;
     border-radius: 27px;
     background: var(--magenta);
-    padding: 5px;
-    padding-top: 2px;
+    padding: 7px;
+    padding-top: 1px;
     cursor: pointer;
     color: var(--white);
   }
@@ -238,7 +239,6 @@ input[type="number"] {
   }
   .client-logo {
     height: 10rem;
-    padding: 3rem;
   }
   .client-logo .gallery img {
     margin: 0rem 1rem;

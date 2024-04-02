@@ -4,8 +4,6 @@
   width: 100%;
   height: 384px;
   background: var(--deepNavy);
-  /* background-image: linear-gradient(to right, #01253d 20%, transparent),
-    url("../images/contacts_us-top-img.svg"); */
   background-repeat: no-repeat;
   background-position: right top;
   padding-top: 10rem;
@@ -291,9 +289,4 @@ ________________________________________________________________________________
   .map-headding-desktop {
     display: none;
   }
-}
-
-@media only screen and (min-width: 800px) and (max-width: 1200px) {
-}
-@media only screen and (min-width: 1200px) and (max-width: 1600px) {
 }

@@ -14,7 +14,29 @@ document.addEventListener("DOMContentLoaded", function () {
   var observer = new IntersectionObserver(
     function (entries, observer) {
       entries.forEach(function (entry) {
-        if (entry.isIntersecting && window.innerWidth > 1000) {
+        if (entry.isIntersecting && window.innerWidth > 800) {
+          element.style.backgroundImage =
+            "linear-gradient(to right, #01253d 20%, transparent),url(https://res.cloudinary.com/dnvykpdlo/image/upload/v1711964391/Rafico/top-img-product_iqhyz9.png)";
+          observer.unobserve(entry.target);
+        } else {
+          element.style.backgroundImage =
+            "url(https://res.cloudinary.com/dnvykpdlo/image/upload/v1711970410/Rafico/top-product-img-mobile_cmuzo8.png)";
+          observer.unobserve(entry.target);
+        }
+      });
+    },
+    { threshold: 0.5 }
+  );
+
+  observer.observe(element);
+});
+// lazy loading top image
+window.addEventListener("resize", function () {
+  var element = document.querySelector(".top-img");
+  var observer = new IntersectionObserver(
+    function (entries, observer) {
+      entries.forEach(function (entry) {
+        if (entry.isIntersecting && window.innerWidth > 800) {
           element.style.backgroundImage =
             "linear-gradient(to right, #01253d 20%, transparent),url(https://res.cloudinary.com/dnvykpdlo/image/upload/v1711964391/Rafico/top-img-product_iqhyz9.png)";
           observer.unobserve(entry.target);
@@ -184,4 +206,23 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // default load category images
   loadCategoryImages(buttons[0]);
+});
+
+// footer mobile
+window.addEventListener("resize", () => {
+  var footer = document.querySelector(".hr-line-mobile");
+  if (window.innerWidth < 425) {
+    footer.style.display = "block";
+  } else {
+    footer.style.display = "none";
+  }
+});
+
+document.addEventListener("DOMContentLoaded", () => {
+  var footer = document.querySelector(".hr-line-mobile");
+  if (window.innerWidth < 425) {
+    footer.style.display = "block";
+  } else {
+    footer.style.display = "none";
+  }
 });

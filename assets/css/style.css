@@ -181,14 +181,18 @@ input[type="number"] {
   margin-top: 1.5rem;
   padding: 1rem;
 }
-
+/* 
 .footer-icons-mobile {
   border: 0;
   border-bottom: 1px;
   border-style: solid;
   border-color: #4e5683;
-}
+} */
 
+/* hr line for mobile */
+.hr-line-mobile {
+  display: none;
+}
 /* Footer for mobile */
 .footer-mobile {
   display: none;

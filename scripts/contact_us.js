@@ -146,3 +146,22 @@ document.addEventListener("DOMContentLoaded", function () {
       });
   });
 });
+
+// footer mobile
+window.addEventListener("resize", () => {
+  var footer = document.querySelector(".hr-line-mobile");
+  if (window.innerWidth < 425) {
+    footer.style.display = "block";
+  } else {
+    footer.style.display = "none";
+  }
+});
+
+document.addEventListener("DOMContentLoaded", () => {
+  var footer = document.querySelector(".hr-line-mobile");
+  if (window.innerWidth < 425) {
+    footer.style.display = "block";
+  } else {
+    footer.style.display = "none";
+  }
+});

@@ -179,6 +179,7 @@ ________________________________________________________________________________
     padding-top: 4rem;
     height: 33rem;
     margin-top: 4rem;
+    background-size: cover;
   }
   .top-img .headding {
     display: none;

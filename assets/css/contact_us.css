@@ -168,6 +168,7 @@ ________________________________________________________________________________
     background-image: linear-gradient(to right, #01253d 20%, transparent),
       url("../images/contacts_us-top-mobile-img.svg");
     padding-top: 5rem;
+    background-size: cover;
   }
   .top-img div > h1 {
     font-size: 32px;

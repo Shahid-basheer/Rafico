@@ -14,7 +14,28 @@ document.addEventListener("DOMContentLoaded", function () {
   var observer = new IntersectionObserver(
     function (entries, observer) {
       entries.forEach(function (entry) {
-        if (entry.isIntersecting && window.innerWidth > 1000) {
+        if (entry.isIntersecting && window.innerWidth > 800) {
+          element.style.backgroundImage =
+            "url(https://res.cloudinary.com/dnvykpdlo/image/upload/v1711964566/Rafico/top-img-about_us_cyonba.png)";
+          observer.unobserve(entry.target);
+        } else {
+          element.style.backgroundImage =
+            "linear-gradient(to right, #01253d 10%, transparent),url(https://res.cloudinary.com/dnvykpdlo/image/upload/v1711970680/Rafico/top-contact-mobile-img_nnphmn.png)";
+          observer.unobserve(entry.target);
+        }
+      });
+    },
+    { threshold: 0.5 }
+  );
+
+  observer.observe(element);
+});
+window.addEventListener("resize", function () {
+  var element = document.querySelector(".top-img");
+  var observer = new IntersectionObserver(
+    function (entries, observer) {
+      entries.forEach(function (entry) {
+        if (entry.isIntersecting && window.innerWidth > 800) {
           element.style.backgroundImage =
             "url(https://res.cloudinary.com/dnvykpdlo/image/upload/v1711964566/Rafico/top-img-about_us_cyonba.png)";
           observer.unobserve(entry.target);

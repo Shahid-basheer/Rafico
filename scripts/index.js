@@ -10,26 +10,44 @@ document.addEventListener("DOMContentLoaded", function () {
 
 //lazy loading images home top img
 document.addEventListener("DOMContentLoaded", function () {
-  window.addEventListener("resize", () => {
-    var element = document.querySelector(".top-img");
-    var observer = new IntersectionObserver(
-      function (entries, observer) {
-        entries.forEach(function (entry) {
-          if (entry.isIntersecting && window.innerWidth > 690) {
-            element.style.backgroundImage =
-              " linear-gradient(to right, #01253d 40%, transparent),url(https://res.cloudinary.com/dnvykpdlo/image/upload/v1711964046/Rafico/top-img-home_bgw3pw.png)";
-            observer.unobserve(entry.target);
-          } else {
-            element.style.backgroundImage =
-              "linear-gradient(to bottom, #01253d 45%, transparent),url(./assets/images/top-img.svg)";
-          }
-        });
-      },
-      { threshold: 0.5 }
-    );
+  var element = document.querySelector(".top-img");
+  var observer = new IntersectionObserver(
+    function (entries, observer) {
+      entries.forEach(function (entry) {
+        if (entry.isIntersecting && window.innerWidth > 690) {
+          element.style.backgroundImage =
+            " linear-gradient(to right, #01253d 40%, transparent),url(https://res.cloudinary.com/dnvykpdlo/image/upload/v1711964046/Rafico/top-img-home_bgw3pw.png)";
+          observer.unobserve(entry.target);
+        } else {
+          element.style.backgroundImage =
+            "linear-gradient(to bottom, #01253d 45%, transparent),url(./assets/images/top-img.svg)";
+        }
+      });
+    },
+    { threshold: 0.5 }
+  );
 
-    observer.observe(element);
-  });
+  observer.observe(element);
+});
+window.addEventListener("resize", function () {
+  var element = document.querySelector(".top-img");
+  var observer = new IntersectionObserver(
+    function (entries, observer) {
+      entries.forEach(function (entry) {
+        if (entry.isIntersecting && window.innerWidth > 690) {
+          element.style.backgroundImage =
+            " linear-gradient(to right, #01253d 40%, transparent),url(https://res.cloudinary.com/dnvykpdlo/image/upload/v1711964046/Rafico/top-img-home_bgw3pw.png)";
+          observer.unobserve(entry.target);
+        } else {
+          element.style.backgroundImage =
+            "linear-gradient(to bottom, #01253d 45%, transparent),url(./assets/images/top-img.svg)";
+        }
+      });
+    },
+    { threshold: 0.5 }
+  );
+
+  observer.observe(element);
 });
 //lazy loading images home top introduction img
 document.addEventListener("DOMContentLoaded", function () {
@@ -255,6 +273,15 @@ document.addEventListener("DOMContentLoaded", function () {
 
 // footer mobile
 window.addEventListener("resize", () => {
+  var footer = document.querySelector(".hr-line-mobile");
+  if (window.innerWidth < 425) {
+    footer.style.display = "block";
+  } else {
+    footer.style.display = "none";
+  }
+});
+
+document.addEventListener("DOMContentLoaded", () => {
   var footer = document.querySelector(".hr-line-mobile");
   if (window.innerWidth < 425) {
     footer.style.display = "block";

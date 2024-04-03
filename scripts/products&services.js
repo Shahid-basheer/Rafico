@@ -177,9 +177,7 @@ document.addEventListener("DOMContentLoaded", function () {
         var col = document.createElement("div");
         col.classList.add("col", "pt-3", "px-2");
         var innerDiv = document.createElement("div");
-        innerDiv.style.minWidth = "22rem";
-        innerDiv.style.height = "20rem";
-        innerDiv.style.background = " #f4f4f4;";
+        innerDiv.classList.add("pro-img-container");
         var imgDiv = document.createElement("div");
         imgDiv.classList.add("pro-img");
         imgDiv.style.backgroundImage = `url(../assets/images/${imagePath}`;

@@ -48,6 +48,14 @@
   transition: 0.5s;
 }
 
+.pro-img-container {
+  min-width: 22rem;
+  height: 20rem;
+  background: #f4f4f4;
+  border-radius: 12px;
+  transition: all 0.5s;
+}
+
 .pro-img {
   min-width: 22rem;
   height: 20rem;
@@ -71,7 +79,7 @@
   }
 }
 
-.pro-img:hover {
+.pro-img-container:hover {
   transform: scale(0.9);
 }
 
@@ -119,5 +127,19 @@ ________________________________________________________________________________
   }
   .top-img div > h1 {
     font-size: 32px;
+  }
+
+  .pro-img-container {
+    min-width: 10rem;
+    height: 9rem;
+  }
+
+  .pro-img {
+    min-width: 10rem;
+    height: 9rem;
+  }
+  #product-images {
+    padding-left: 1rem;
+    padding-right: 1rem;
   }
 }

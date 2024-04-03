@@ -118,7 +118,7 @@ document.addEventListener("DOMContentLoaded", function () {
   var headding = document.querySelector(".form-headding");
 
   myModal._element.addEventListener("hidden.bs.modal", function () {
-    window.location.href = "/index.html";
+    window.location.href = "../index.html";
   });
 
   contactForm.addEventListener("submit", function (event) {

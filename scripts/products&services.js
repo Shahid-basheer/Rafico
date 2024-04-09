@@ -173,8 +173,15 @@ document.addEventListener("DOMContentLoaded", function () {
       "sports5.jpg",
       "sports6.jpg",
     ],
-    boots: ["none"],
-    loafers: ["none"],
+    slipers: [
+      "slip1.jpg",
+      "slip2.jpg",
+      "slip3.jpg",
+      "slip4.jpg",
+      "slip5.jpg",
+      "slip6.jpg",
+      "slip7.jpg",
+    ],
   };
   function loadCategoryImages(button) {
     var category = button.getAttribute("data-category");

@@ -173,7 +173,7 @@ document.addEventListener("DOMContentLoaded", function () {
       "sports5.jpg",
       "sports6.jpg",
     ],
-    slipers: [
+    slippers: [
       "slip1.jpg",
       "slip2.jpg",
       "slip3.jpg",

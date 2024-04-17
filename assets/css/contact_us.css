@@ -17,8 +17,8 @@
 }
 
 .email-icon-contacts {
-  width: 27px;
-  height: 27px;
+  width: 40px;
+  height: 40px;
   border-radius: 27px;
   background: var(--magenta);
   display: flex;
@@ -27,8 +27,8 @@
   cursor: pointer;
 }
 .phone-icon-contacts {
-  width: 27px;
-  height: 27px;
+  width: 40px;
+  height: 40px;
   border-radius: 27px;
   background: var(--magenta);
   display: flex;
@@ -38,8 +38,8 @@
 }
 
 .map-icon-contacts {
-  width: 27px;
-  height: 27px;
+  width: 40px;
+  height: 40px;
   border-radius: 27px;
   background: var(--magenta);
   display: flex;
@@ -96,7 +96,7 @@
   background: transparent;
   border: 1px solid #e0e0e0;
   border-radius: 12px;
-  font-size: 20px;
+  font-size: 16px;
   padding-left: 1rem;
   color: var(--white);
 }
@@ -105,7 +105,7 @@
   height: 135px;
   background: transparent;
   border-radius: 12px;
-  font-size: 20px;
+  font-size: 16px;
   padding-left: 1rem;
   padding-top: 1rem;
   color: var(--white);

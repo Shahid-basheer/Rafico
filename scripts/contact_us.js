@@ -16,11 +16,11 @@ document.addEventListener("DOMContentLoaded", function () {
       entries.forEach(function (entry) {
         if (entry.isIntersecting && window.innerWidth > 800) {
           element.style.backgroundImage =
-            "url(https://res.cloudinary.com/dnvykpdlo/image/upload/v1711964566/Rafico/top-img-about_us_cyonba.png)";
+            "url(../assets/images/top-contact-img.png)";
           observer.unobserve(entry.target);
         } else {
           element.style.backgroundImage =
-            "linear-gradient(to right, #01253d 10%, transparent),url(https://res.cloudinary.com/dnvykpdlo/image/upload/v1711970680/Rafico/top-contact-mobile-img_nnphmn.png)";
+            "linear-gradient(to right, #01253d 10%, transparent),url(../assets/images/top-contact-img-mobile.png)";
           observer.unobserve(entry.target);
         }
       });
@@ -37,11 +37,11 @@ window.addEventListener("resize", function () {
       entries.forEach(function (entry) {
         if (entry.isIntersecting && window.innerWidth > 800) {
           element.style.backgroundImage =
-            "url(https://res.cloudinary.com/dnvykpdlo/image/upload/v1711964566/Rafico/top-img-about_us_cyonba.png)";
+            "url(../assets/images/top-contact-img.png)";
           observer.unobserve(entry.target);
         } else {
           element.style.backgroundImage =
-            "linear-gradient(to right, #01253d 10%, transparent),url(https://res.cloudinary.com/dnvykpdlo/image/upload/v1711970680/Rafico/top-contact-mobile-img_nnphmn.png)";
+            "linear-gradient(to right, #01253d 10%, transparent),url(../assets/images/top-contact-img-mobile.png)";
           observer.unobserve(entry.target);
         }
       });
@@ -59,7 +59,7 @@ document.addEventListener("DOMContentLoaded", function () {
       entries.forEach(function (entry) {
         if (entry.isIntersecting) {
           element.style.backgroundImage =
-            "url(https://res.cloudinary.com/dnvykpdlo/image/upload/v1711967233/Rafico/contact_us-map-img_zgxnoj.png)";
+            "url(../assets/images/contacts_us-map.png)";
           entry.target.style.opacity = "1";
           observer.unobserve(entry.target);
         }

@@ -16,11 +16,11 @@ document.addEventListener("DOMContentLoaded", function () {
       entries.forEach(function (entry) {
         if (entry.isIntersecting && window.innerWidth > 800) {
           element.style.backgroundImage =
-            "linear-gradient(to right, #01253d 20%, transparent),url(https://res.cloudinary.com/dnvykpdlo/image/upload/v1711964196/Rafico/top-img-about_us_odsgpw.png)";
+            "url(../assets/images/top-about-img.png)";
           observer.unobserve(entry.target);
         } else {
           element.style.backgroundImage =
-            "linear-gradient(to right, #01253d 25%, transparent),url(https://res.cloudinary.com/dnvykpdlo/image/upload/v1711970121/Rafico/top-about-mobile-img_aqf1dw.png)";
+            "url(../assets/images/top-about-img-mobile.png)";
           observer.unobserve(entry.target);
         }
       });
@@ -37,11 +37,11 @@ window.addEventListener("resize", function () {
       entries.forEach(function (entry) {
         if (entry.isIntersecting && window.innerWidth > 800) {
           element.style.backgroundImage =
-            "linear-gradient(to right, #01253d 20%, transparent),url(https://res.cloudinary.com/dnvykpdlo/image/upload/v1711964196/Rafico/top-img-about_us_odsgpw.png)";
+            "url(../assets/images/top-about-img.png)";
           observer.unobserve(entry.target);
         } else {
           element.style.backgroundImage =
-            "linear-gradient(to right, #01253d 25%, transparent),url(https://res.cloudinary.com/dnvykpdlo/image/upload/v1711970121/Rafico/top-about-mobile-img_aqf1dw.png)";
+            "url(../assets/images/top-about-img-mobile.png)";
           observer.unobserve(entry.target);
         }
       });

@@ -5,7 +5,7 @@
   height: 384px;
   background: var(--deepNavy);
   background-repeat: no-repeat;
-  background-position: right top;
+  background-size: 100% 100%;
   padding-top: 10rem;
   color: var(--white);
   margin-top: 5.9rem;
@@ -109,6 +109,9 @@ ________________________________________________________________________________
   .wht-we-do-column {
     width: 100%;
     flex: 0 0 auto;
+  }
+  .wht-we-do-column-right {
+    text-align: center;
   }
 }
 

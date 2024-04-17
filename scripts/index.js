@@ -74,7 +74,7 @@ document.addEventListener("DOMContentLoaded", function () {
       entries.forEach(function (entry) {
         if (entry.isIntersecting) {
           element.style.backgroundImage =
-            "url(../assets/images/home-center-img.jpg)";
+            "url(./assets/images/home-center-img.jpg)";
           entry.target.style.opacity = "1";
           observer.unobserve(entry.target);
         }

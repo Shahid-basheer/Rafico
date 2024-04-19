@@ -134,7 +134,6 @@ document.addEventListener("DOMContentLoaded", function () {
       method: "post",
       body: formData,
     })
-      .then((res) => res.json())
       .then((data) => {
         myModal.show();
         contactForm.reset();

@@ -124,6 +124,7 @@ ________________________________________________________________________________
     background-image: linear-gradient(to right, #01253d 20%, transparent),
       url("../images/products-top-mobile-img.svg");
     background-size: cover;
+    margin-top: 4rem;
   }
   .top-img div > h1 {
     font-size: 32px;

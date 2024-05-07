@@ -255,6 +255,7 @@ input[type="number"] {
   .phone-icon i,
   .map-icon i {
     font-size: 14px;
+    margin-top: -2px;
   }
 
   .footer .hr-line {
@@ -273,7 +274,8 @@ input[type="number"] {
   .footer-icons {
     width: 27px;
     height: 27px;
-    border-radius: 25px;
+    border-radius: 15px;
+    padding-top: 1px;
     background: var(--magenta);
     cursor: pointer;
     color: var(--white);

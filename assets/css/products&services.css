@@ -85,7 +85,7 @@
 }
 
 .unboxing-shoes-img1 {
-  min-width: 23rem;
+  min-width: 20rem;
   height: 33rem;
   background: var(--lightWhite);
   background-repeat: no-repeat;
@@ -95,7 +95,7 @@
   transition: opacity 0.5s ease;
 }
 .unboxing-shoes-img2 {
-  min-width: 23rem;
+  min-width: 20rem;
   height: 33rem;
   background: var(--lightWhite);
   background-repeat: no-repeat;
@@ -103,7 +103,7 @@
   background-size: cover;
 }
 .unboxing-shoes-img3 {
-  min-width: 23rem;
+  min-width: 20rem;
   height: 33rem;
   background: var(--lightWhite);
   background-repeat: no-repeat;

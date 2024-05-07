@@ -16,11 +16,11 @@ document.addEventListener("DOMContentLoaded", function () {
       entries.forEach(function (entry) {
         if (entry.isIntersecting && window.innerWidth > 800) {
           element.style.backgroundImage =
-            "linear-gradient(to right, #01253d 20%, transparent),url(../assets/images/top-img-product.png)";
+            "url(../assets/images/top-img-product.png)";
           observer.unobserve(entry.target);
         } else {
           element.style.backgroundImage =
-            "linear-gradient(to right, #01253d 10%, transparent),url(../assets/images/top-product-img-mobile.png)";
+            "url(../assets/images/top-product-img-mobile.png)";
           observer.unobserve(entry.target);
         }
       });
@@ -38,7 +38,7 @@ window.addEventListener("resize", function () {
       entries.forEach(function (entry) {
         if (entry.isIntersecting && window.innerWidth > 800) {
           element.style.backgroundImage =
-            "linear-gradient(to right, #01253d 20%, transparent),url(../assets/images/top-img-product.png)";
+            "url(../assets/images/top-img-product.png)";
           observer.unobserve(entry.target);
         } else {
           element.style.backgroundImage =

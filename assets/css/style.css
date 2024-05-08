@@ -127,22 +127,31 @@ input[type="number"] {
 }
 
 .email-icon {
-  width: 40px;
-  height: 40px;
+  width: 45px;
+  height: 45px;
   border-radius: 27px;
   background: var(--magenta);
-  padding: 11px;
-  padding-top: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   cursor: pointer;
 }
+.email-icon i {
+  font-size: 23px;
+}
 .phone-icon {
-  width: 40px;
-  height: 40px;
+  width: 45px;
+  height: 45px;
   border-radius: 27px;
   background: var(--magenta);
-  padding: 11px;
-  padding-top: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   cursor: pointer;
+}
+
+.phone-icon i {
+  font-size: 20px;
 }
 
 .map-icon {
@@ -157,18 +166,18 @@ input[type="number"] {
 }
 
 .footer-icons {
-  width: 40px;
-  height: 40px;
+  width: 45px;
+  height: 45px;
   border-radius: 25px;
   background: var(--magenta);
-  padding: 12px;
-  padding-top: 8px;
   cursor: pointer;
   color: var(--white);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.footer-icons:nth-child(3) {
-  padding: 10px;
-  padding-top: 8px;
+.footer-icons i {
+  font-size: 25px;
 }
 .footer-links {
   padding: 0;
@@ -222,8 +231,6 @@ input[type="number"] {
     height: 27px;
     border-radius: 27px;
     background: var(--magenta);
-    padding: 5px;
-    padding-top: 1px;
     cursor: pointer;
   }
   .phone-icon {
@@ -231,8 +238,6 @@ input[type="number"] {
     height: 27px;
     border-radius: 27px;
     background: var(--magenta);
-    padding: 5px;
-    padding-top: 1px;
     cursor: pointer;
   }
 
@@ -246,6 +251,13 @@ input[type="number"] {
     cursor: pointer;
     color: var(--white);
   }
+  .email-icon i,
+  .phone-icon i,
+  .map-icon i {
+    font-size: 14px;
+    margin-top: -2px;
+  }
+
   .footer .hr-line {
     padding: 1.4rem 0 1.4rem 0rem;
   }
@@ -262,16 +274,14 @@ input[type="number"] {
   .footer-icons {
     width: 27px;
     height: 27px;
-    border-radius: 25px;
+    border-radius: 15px;
+    padding-top: 1px;
     background: var(--magenta);
-    padding: 6px;
-    padding-top: 2px;
     cursor: pointer;
     color: var(--white);
   }
-  .footer-icons:nth-child(3) {
-    padding: 4px;
-    padding-top: 1px;
+  .footer-icons i {
+    font-size: 15px;
   }
   .is-desktop {
     display: none;

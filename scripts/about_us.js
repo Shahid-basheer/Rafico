@@ -16,11 +16,11 @@ document.addEventListener("DOMContentLoaded", function () {
       entries.forEach(function (entry) {
         if (entry.isIntersecting && window.innerWidth > 800) {
           element.style.backgroundImage =
-            "url(../assets/images/top-about-img.png)";
+            "url(../assets/images/top-about-img.jpg)";
           observer.unobserve(entry.target);
         } else {
           element.style.backgroundImage =
-            "url(../assets/images/top-about-img-mobile.png)";
+            "url(../assets/images/top-about-img-mobile.jpg)";
           observer.unobserve(entry.target);
         }
       });
@@ -37,11 +37,11 @@ window.addEventListener("resize", function () {
       entries.forEach(function (entry) {
         if (entry.isIntersecting && window.innerWidth > 800) {
           element.style.backgroundImage =
-            "url(../assets/images/top-about-img.png)";
+            "url(../assets/images/top-about-img.jpg)";
           observer.unobserve(entry.target);
         } else {
           element.style.backgroundImage =
-            "url(../assets/images/top-about-img-mobile.png)";
+            "url(../assets/images/top-about-img-mobile.jpg)";
           observer.unobserve(entry.target);
         }
       });

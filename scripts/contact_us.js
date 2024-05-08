@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", function () {
           observer.unobserve(entry.target);
         } else {
           element.style.backgroundImage =
-            "linear-gradient(to right, #01253d 10%, transparent),url(../assets/images/top-contact-img-mobile.png)";
+            "linear-gradient(to right, #01253d 10%, transparent),url(../assets/images/top-contact-img-mobile.jpg)";
           observer.unobserve(entry.target);
         }
       });
@@ -41,7 +41,7 @@ window.addEventListener("resize", function () {
           observer.unobserve(entry.target);
         } else {
           element.style.backgroundImage =
-            "linear-gradient(to right, #01253d 10%, transparent),url(../assets/images/top-contact-img-mobile.png)";
+            "linear-gradient(to right, #01253d 10%, transparent),url(../assets/images/top-contact-img-mobile.jpg)";
           observer.unobserve(entry.target);
         }
       });

@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", function () {
           observer.unobserve(entry.target);
         } else {
           element.style.backgroundImage =
-            "url(../assets/images/top-product-img-mobile.png)";
+            "linear-gradient(to right, #01253d 20%, transparent),url(../assets/images/top-product-img-mobile.jpg)";
           observer.unobserve(entry.target);
         }
       });
@@ -42,7 +42,7 @@ window.addEventListener("resize", function () {
           observer.unobserve(entry.target);
         } else {
           element.style.backgroundImage =
-            "url(../assets/images/top-product-img-mobile.png)";
+            "linear-gradient(to right, #01253d 20%, transparent),url(../assets/images/top-product-img-mobile.jpg)";
           observer.unobserve(entry.target);
         }
       });
